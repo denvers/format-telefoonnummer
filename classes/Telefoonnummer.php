@@ -1,4 +1,4 @@
-<?php
+<?php namespace denvers;
 
 /**
  * Format the Dutch telephone number
@@ -209,9 +209,9 @@ class Telefoonnummer {
 	 * @return string
 	 */
 	public static function beautify( $telefoonnummer, $beautify_separator = " " ) {
-		$telefoonnummer = Telefoonnummer::format( $telefoonnummer );
+		$telefoonnummer = self::format( $telefoonnummer );
 
-		foreach ( Telefoonnummer::$netnummers as $netnummer ) {
+		foreach ( self::$netnummers as $netnummer ) {
 			if ( preg_match( "/^" . $netnummer . "/", $telefoonnummer, $matches ) ) {
 				$telefoonnummer = preg_replace( "/^" . $netnummer . "/", $netnummer . $beautify_separator,
 					$telefoonnummer );
