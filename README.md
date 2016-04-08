@@ -22,6 +22,7 @@ Formatteer alle Nederlandse telefoonnummers volgens de nationale standaard. Alle
 use denvers\Telefoonnummer;
 
 Telefoonnummer::beautify("020 123 4567"); // produces 020 1234567
+```
 
 Telefoonnummer::beautify("020 123 4567", " - "); // produces 020 - 1234567
 ```
