@@ -23,5 +23,5 @@ use denvers\Telefoonnummer;
 
 Telefoonnummer::beautify("020 123 4567"); // produces 020 1234567
 
-Telefoonnummer::beutify("020 123 4567", " - "); // produces 020 - 1234567
+Telefoonnummer::beautify("020 123 4567", " - "); // produces 020 - 1234567
 ```
